@@ -10,6 +10,8 @@ Alternatively, you can use a provider block in Terraform or generate a provider 
 
 You'll find the code for each of the four methods in a sub-folder. They will simply deploy a common SSM parameter using the common `ssm-string-parameter` module.
 
+You'll also find two additional folders where an S3 backend is used. This is to demonstrate the issues you might encounter as explained in the article.
+
 ## CI/CD Considerations
 
 The method presented here is specifically for a user who is manually deploying infrastructure with Terraform or Terragrunt from their local development machine. In a proper CI/CD environment you might use this method only for bootstrapping the initial CI/CD pipeline and roles. Any future change would be done through Git commits and the CI/CD pipeline (for example CodePipeline and CodeBuild) would then assume the necessary roles to automatically deploy infrastructure using Terraform or Terragrunt.
