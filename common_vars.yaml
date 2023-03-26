@@ -1,0 +1,4 @@
+profile: "DevelopmentPowerUser"
+region: "ap-southeast-2"
+
+profile_with_s3: "DevelopmentPowerUserTerraform"
